@@ -5,7 +5,9 @@
 #
 # Requires tidyverse:
 # install.packages("tidyverse")
+# install.packages("ggplot2")
 library(tidyverse)
+library(ggplot2)
 
 
 # Read in the age csv.
@@ -25,3 +27,12 @@ my_summary <- my_data %>%
 
 # Write the results out to CSV.
 write_csv(my_summary, "summary_stats.csv")
+
+# Generate a boxplot showing the results.
+my_data %>% 
+  ggplot() +
+  geom_boxplot(aes(x=state, y=age_years, fill=state), outlier.shape=NA) +
+  scale_fill_brewer(palette="Set2")
+
+# Save the results to a PNG.
+ggsave("my_result_plot.png", width=6, height=5, unit="in")
