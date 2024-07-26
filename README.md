@@ -25,7 +25,7 @@ You will need to download the input data separately (not included in this reposi
 
 # Results
 
-![](my_result_plot.png)
+![](images/my_result_plot.png)
 
 Above we show a boxplot, with each box displaying distribution of ages for each state. 
 
