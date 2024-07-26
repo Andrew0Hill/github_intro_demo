@@ -13,6 +13,9 @@ library(ggplot2)
 # Read in the age csv.
 my_data <- read_csv("ages.csv")
 
+# Write the head of this dataframe to a file.
+write_csv(head(my_data), "ages_head.csv")
+
 # Calculate summary statistics by state.
 my_summary <- my_data %>% 
   group_by(state) %>%
