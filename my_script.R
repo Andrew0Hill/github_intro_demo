@@ -9,6 +9,7 @@
 library(tidyverse)
 library(ggplot2)
 
+print("This a bad line of code.")
 
 # Read in the age csv.
 my_data <- read_csv("ages.csv")
