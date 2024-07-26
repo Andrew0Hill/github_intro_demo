@@ -13,13 +13,8 @@ library(ggplot2)
 # Read in the age csv.
 my_data <- read_csv("ages.csv")
 
-<<<<<<< Updated upstream
-# Here's a different message.
-print("My sample message")
-=======
 # Print out a message
 print("Here's a sample message")
->>>>>>> Stashed changes
 
 # Write the head of this dataframe to a file.
 write_csv(head(my_data), "ages_head.csv")
